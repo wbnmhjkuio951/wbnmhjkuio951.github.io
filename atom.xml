@@ -5,9 +5,9 @@
   <subtitle>wjianghongs465@sina.com</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-09-24T12:54:47.136Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://www.jhs1996.cn/"/>
+  <updated>2019-09-25T04:06:06.497Z</updated>
+  <id>http://www.jhs1996.cn/</id>
   
   <author>
     <name>JHS-1886</name>
@@ -17,9 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>第三篇</title>
+    <link href="http://www.jhs1996.cn/2019/09/25/second/"/>
+    <id>http://www.jhs1996.cn/2019/09/25/second/</id>
+    <published>2019-09-25T04:05:30.224Z</published>
+    <updated>2019-09-25T04:06:06.497Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>更新内容</title>
-    <link href="http://yoursite.com/2019/09/24/first/"/>
-    <id>http://yoursite.com/2019/09/24/first/</id>
+    <link href="http://www.jhs1996.cn/2019/09/24/first/"/>
+    <id>http://www.jhs1996.cn/2019/09/24/first/</id>
     <published>2019-09-24T12:52:19.286Z</published>
     <updated>2019-09-24T12:54:47.136Z</updated>
     
@@ -33,8 +48,8 @@
   
   <entry>
     <title>这是个人博客</title>
-    <link href="http://yoursite.com/2019/09/24/hello-world/"/>
-    <id>http://yoursite.com/2019/09/24/hello-world/</id>
+    <link href="http://www.jhs1996.cn/2019/09/24/hello-world/"/>
+    <id>http://www.jhs1996.cn/2019/09/24/hello-world/</id>
     <published>2019-09-24T07:43:25.530Z</published>
     <updated>2019-09-24T15:48:39.026Z</updated>
     
