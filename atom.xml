@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>J先生的博客</title>
+  
+  <subtitle>wjianghongs465@sina.com</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-09-24T12:54:47.136Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>JHS-1886</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>更新内容</title>
+    <link href="http://yoursite.com/2019/09/24/first/"/>
+    <id>http://yoursite.com/2019/09/24/first/</id>
+    <published>2019-09-24T12:52:19.286Z</published>
+    <updated>2019-09-24T12:54:47.136Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>这是个人博客</title>
+    <link href="http://yoursite.com/2019/09/24/hello-world/"/>
+    <id>http://yoursite.com/2019/09/24/hello-world/</id>
+    <published>2019-09-24T07:43:25.530Z</published>
+    <updated>2019-09-24T15:48:39.026Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎加入</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;欢迎加入&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
