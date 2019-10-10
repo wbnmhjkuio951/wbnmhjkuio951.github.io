@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Vue,React,">
+  <meta name="keywords" content="Vue,JS,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="或许是流离之人追逐幻影">
-<meta name="keywords" content="Vue,React">
+<meta name="description" content="JS知识点JS基础知识">
+<meta name="keywords" content="Vue,JS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="更新内容">
+<meta property="og:title" content="JS基础">
 <meta property="og:url" content="http://www.jhs1996.cn/2019/09/24/first/index.html">
 <meta property="og:site_name" content="J先生的博客">
-<meta property="og:description" content="或许是流离之人追逐幻影">
+<meta property="og:description" content="JS知识点JS基础知识">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-26T08:33:31.865Z">
+<meta property="og:updated_time" content="2019-10-10T08:58:02.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="更新内容">
-<meta name="twitter:description" content="或许是流离之人追逐幻影">
+<meta name="twitter:title" content="JS基础">
+<meta name="twitter:description" content="JS知识点JS基础知识">
 
 
 
@@ -135,7 +135,7 @@
 
 
 
-  <title>更新内容 | J先生的博客</title>
+  <title>JS基础 | J先生的博客</title>
   
 
 
@@ -281,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">更新内容</h1>
+          <h1 class="post-title" itemprop="name headline">JS基础</h1>
         
 
         <div class="post-meta">
@@ -305,6 +305,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JS知识点/" itemprop="url" rel="index">
+                    <span itemprop="name">JS知识点</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -322,7 +344,7 @@
 
           
           
-             <span id="/2019/09/24/first/" class="leancloud_visitors" data-flag-title="更新内容">
+             <span id="/2019/09/24/first/" class="leancloud_visitors" data-flag-title="JS基础">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -353,7 +375,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  1.2k
                 </span>
               
 
@@ -369,7 +391,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -390,7 +412,31 @@
       
 
       
-        
+        <h1 id="JS知识点"><a href="#JS知识点" class="headerlink" title="JS知识点"></a>JS知识点</h1><p>JS基础知识<a id="more"></a></p>
+<p>JS执行环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">全局执行环境  函数执行环境  的定义？</span><br><span class="line"></span><br><span class="line">js代码执行 先进入默认的全局执行环境   （web浏览器 中  window对象）</span><br><span class="line"></span><br><span class="line">执行环境3个属性  变量对象VO  作用域链Scope  this</span><br><span class="line"></span><br><span class="line">每个`执行环境`都有一个与之关联的`变量对象`，**环境中定义的所有变量和函数都保存在这个对象中**</span><br><span class="line"></span><br><span class="line">变量对象VO：&#123;</span><br><span class="line">变量声明，函数声明，函数的形参</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">全局执行环境中的变量对象允许通过VO直接访问   函数执行环境中VO不能直接访问  将活动对象AO作为变量对象	</span><br><span class="line"></span><br><span class="line">**AO 是在进入函数的执行环境时创建的**，并为该对象初始化一个 arguments 对象（**这个对象在全局环境是不存在的！**）。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a=&apos;global var&apos;   //通过变量声明的变量a</span><br><span class="line"></span><br><span class="line">function foo() &#123;     //通过函数声明的变量foo</span><br><span class="line">   var ax=&apos;local var&apos;</span><br><span class="line"> &#125;</span><br><span class="line">执行到foo的时候，就会有foo的活动对象AO创建（初始化的arguments 对象，通过变量声明的ax）</span><br></pre></td></tr></table></figure>
+
+<p>Ajax</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function sendMessage () &#123;</span><br><span class="line">    // 1 创建对象</span><br><span class="line">    var ajax = new XMLHttpRequest()</span><br><span class="line"></span><br><span class="line">    // 2 跟服务器建立连接</span><br><span class="line">    //ajax.open(&quot;GET&quot;,&quot;url&quot;,true); //get请求，url请求地址，true代表异步</span><br><span class="line">    // open方法有三个参数，第一个是请求的method，第二个参数是url，第三个参数是 是否异步 一般默认值是true，所以很多时候不传第三个参数</span><br><span class="line">    ajax.open(&apos;get&apos;, &apos;02.php?id=8&apos;)</span><br><span class="line"></span><br><span class="line">    // 3 开始发送数据，由于是get请求，所以数据是写在url上的，这里不需要发送任何数据，但是这个方法必须要调用</span><br><span class="line">    ajax.send()</span><br><span class="line"></span><br><span class="line">    // 4 监听状态改变</span><br><span class="line">    xhr.onreadystatechange = function () &#123;</span><br><span class="line">      if (xhr.readyState === 4) &#123;   //5种状态</span><br><span class="line">        if (xhr.status === 200) &#123;   //状态码</span><br><span class="line">          // 请求成功</span><br><span class="line">         console.log(ajax.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>回调函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">1.什么是回调函数？</span><br><span class="line">回调函数就是传递一个参数化的函数，就是将这个函数作为一个参数传到另一个主函数里面，当那一个主函数执行完之后，再执行传进去的作为参数的函数。走这个过程的参数化的函数 就叫做回调函数。</span><br><span class="line"></span><br><span class="line">function main(title,value) &#123;   //主函数   title作为一个参数传递进来</span><br><span class="line">alert(&apos;主函数&apos;)   </span><br><span class="line">    title(value)   //执行完alert之后再执行回调title</span><br><span class="line">&#125;</span><br><span class="line">function title(value) &#123;  //回调函数</span><br><span class="line">    alert(value)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main(title,&apos;回调函数&apos;)</span><br><span class="line">2.回调的缺点</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">阻止冒泡和默认事件</span><br><span class="line">stopPropagation  阻止事件冒泡</span><br><span class="line"> function stopPropagation(e) &#123;</span><br><span class="line">        e = e || window.event;</span><br><span class="line">        if (e.stopPropagation) &#123; //W3C阻止冒泡方法</span><br><span class="line">            e.stopPropagation();</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            e.cancelBubble = true; //IE阻止冒泡方法</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">&lt;div id=&apos;div&apos; onclick=&apos;alert(&quot;div&quot;);&apos;&gt;</span><br><span class="line">    &lt;ul onclick=&apos;alert(&quot;ul&quot;);&apos;&gt;</span><br><span class="line">        &lt;li id=&quot;lis&quot;&gt;test&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  let lis=document.getElementById(&apos;lis&apos;);</span><br><span class="line">  lis.onclick=function (event) &#123;</span><br><span class="line">      var e=e||window.event</span><br><span class="line">      alert(&quot;li&quot;)</span><br><span class="line">      window.e?window.e.cancelBubble:e.stopPropagation()</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">return false   阻止默认事件</span><br><span class="line">&lt;div id=&quot;div&quot; &gt;</span><br><span class="line">    &lt;a href=&quot;&quot;  id=&quot;a&quot;&gt;1111&lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">document.getElementById(&apos;a&apos;).onclick=function () &#123;</span><br><span class="line">    return false</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">a.onclick =function(e)&#123;</span><br><span class="line">if(e.preventDefault)&#123;</span><br><span class="line">e.preventDefault();   //w3c</span><br><span class="line">&#125;else&#123;</span><br><span class="line">window.event.returnValue == false; //IE</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="事件捕获"><a href="#事件捕获" class="headerlink" title="事件捕获"></a>事件捕获</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">事件监听:</span><br><span class="line">addEventListener(type,listener,useCapture)</span><br><span class="line">//type: 必须,String类型,事件类型</span><br><span class="line">//listener:执行函数</span><br><span class="line">//useCapture: 可选,boolean类型。指定事件是否发生在捕获阶段。默认为false,事件发生在冒泡阶段</span><br><span class="line"></span><br><span class="line">事件委托的优点：</span><br><span class="line">1.提高性能:每一个函数都会占用内存空间，只需添加一个事件处理程序代理所有事件,所占用的内存空间更少。</span><br><span class="line">2.动态监听:使用事件委托可以自动绑定动态添加的元素,即新增的节点不需要主动添加也可以一样具有和其他元素一样的事件。</span><br></pre></td></tr></table></figure>
+
+<h3 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">JSON语法：</span><br><span class="line">JSON数组：</span><br><span class="line">&#123;</span><br><span class="line">&quot;employees&quot;: [</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;John&quot; , &quot;lastName&quot;:&quot;Doe&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Anna&quot; , &quot;lastName&quot;:&quot;Smith&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Peter&quot; , &quot;lastName&quot;:&quot;Jones&quot; &#125;</span><br><span class="line">]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">JSON 使用 JavaScript 语法：</span><br><span class="line">var employees = [</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Bill&quot; , &quot;lastName&quot;:&quot;Gates&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;George&quot; , &quot;lastName&quot;:&quot;Bush&quot; &#125;,</span><br><span class="line">&#123; &quot;firstName&quot;:&quot;Thomas&quot; , &quot;lastName&quot;: &quot;Carter&quot; &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">在向服务器发送数据时一般是字符串，JSON.stringify 将 JavaScript 对象/数组转换为字符串。</span><br><span class="line">在接收服务器数据时一般是字符串。JSON.parse() 方法将数据转换为 JavaScript 对象。</span><br><span class="line"></span><br><span class="line">var obj=&#123;&apos;jiang&apos;:111,&apos;hong&apos;:222,&apos;sheng&apos;:333&#125;</span><br><span class="line">   console.log(obj)</span><br><span class="line">    let aobj=JSON.stringify(obj)</span><br><span class="line">    console.log(aobj)</span><br><span class="line"></span><br><span class="line">    let bobj=JSON.parse(aobj)</span><br><span class="line">    console.log(bobj)</span><br></pre></td></tr></table></figure>
+
+<h3 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
@@ -409,7 +455,7 @@
           
             <a href="/tags/Vue/" rel="tag"># Vue</a>
           
-            <a href="/tags/React/" rel="tag"># React</a>
+            <a href="/tags/JS/" rel="tag"># JS</a>
           
         </div>
       
@@ -489,8 +535,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -518,7 +573,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -529,7 +584,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -587,6 +642,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JS知识点"><span class="nav-number">1.</span> <span class="nav-text">JS知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事件捕获"><span class="nav-number">1.0.1.</span> <span class="nav-text">事件捕获</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSON"><span class="nav-number">1.0.2.</span> <span class="nav-text">JSON</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跨域"><span class="nav-number">1.0.3.</span> <span class="nav-text">跨域</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -813,7 +884,7 @@
         notify: false,
         appId: 'ybvU9bODQcezg8BPHEar4M3s-gzGzoHsz',
         appKey: 'GrlaFdq4KVG175iDaTbQmSSy',
-        placeholder: 'Just go go',
+        placeholder: '快说点什么吧！！！',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
